@@ -1,4 +1,18 @@
+/* SCSS HEX */
+/* SCSS Gradient */
+html {
+  height: 100%;
+}
+
 body {
-  background-image: url("/docs/p/carbon_fibre.png");
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(225deg, #2b4141ff, #0eb1d2ff, #34e4eaff, #f06543ff, #f09d51ff, #ff8811ff);
+}
+
+.bg-slategray {
+  background-color: #2b4141ff;
 }
 /*# sourceMappingURL=index.css.map */
