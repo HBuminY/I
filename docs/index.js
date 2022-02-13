@@ -1,7 +1,9 @@
+//typing effect
+
 var i = 0;
 texts = [
     "Web",
-    "Game",
+    "Oyun",
     "Desktop"
 ];
 var txtIndex = 0;
@@ -20,7 +22,7 @@ function twWrite() {
         setTimeout(twWrite, speed);
     } else if (i == txt.length) {
         speed = OriSpeed;
-        console.log("removing");
+        //console.log("removing");
         setTimeout(twRemove, 2000)
     };
 };
@@ -42,3 +44,11 @@ function twRemove() {
 };
 
 document.onload = twWrite();
+
+//content loader
+function loadPage(href) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", href, false);
+    xmlhttp.send();
+    return xmlhttp.responseText;
+};
