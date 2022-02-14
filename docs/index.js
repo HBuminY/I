@@ -46,9 +46,31 @@ function twRemove() {
 document.onload = twWrite();
 
 //content loader
+contents = [
+    "home.html",
+    "portfolio.html",
+    "projects.html",
+    "services.html",
+    "blog.html",
+    "contact.html"
+];
+
 function loadPage(href) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", href, false);
     xmlhttp.send();
     return xmlhttp.responseText;
 };
+
+let activeBtn = document.getElementById("btn-0")
+function goto(btn_no){
+    let contDiv = document.getElementById('content');
+    contDiv.innerHTML = loadPage("./contents/"+contents[btn_no]);
+    //
+    let btn = document.getElementById(`btn-${btn_no}`);
+    btn.setAttribute("class","nav-link active");
+    activeBtn.setAttribute("class","nav-link");
+    activeBtn = btn;
+};
+
+goto(0);
