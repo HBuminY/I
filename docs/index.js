@@ -62,14 +62,17 @@ function loadPage(href) {
     return xmlhttp.responseText;
 };
 
-let activeBtn = document.getElementById("btn-0")
+let activeBtn = document.getElementById("btn-0");
+
 function goto(btn_no){
     let contDiv = document.getElementById('content');
     contDiv.innerHTML = loadPage("./contents/"+contents[btn_no]);
     //
     let btn = document.getElementById(`btn-${btn_no}`);
     btn.setAttribute("class","nav-link active");
+    btn.setAttribute("aria-current","page");
     activeBtn.setAttribute("class","nav-link");
+    btn.setAttribute("aria-current","false");
     activeBtn = btn;
 };
 

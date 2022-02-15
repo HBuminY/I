@@ -25,4 +25,8 @@ body {
   -webkit-box-shadow: 0 0.5rem 3rem #2b4141ff !important;
           box-shadow: 0 0.5rem 3rem #2b4141ff !important;
 }
+
+.hr-5 {
+  height: 5rem;
+}
 /*# sourceMappingURL=index.css.map */
