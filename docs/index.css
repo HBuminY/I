@@ -3,6 +3,7 @@
 /* SCSS Gradient */
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {

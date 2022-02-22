@@ -48,7 +48,6 @@ document.onload = twWrite();
 //content loader
 contents = [
     "home.html",
-    "portfolio.html",
     "projects.html",
     "services.html",
     "blog.html",
