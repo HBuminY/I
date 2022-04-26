@@ -23,7 +23,7 @@ body {
 }
 
 .bg-slategray {
-  background-color: #2b4141ff;
+  background-color: $dark-tree;
 }
 
 .cursive {
@@ -31,8 +31,8 @@ body {
 }
 
 .shadow-1 {
-  -webkit-box-shadow: 0 0.5rem 3rem #2b4141ff !important;
-          box-shadow: 0 0.5rem 3rem #2b4141ff !important;
+  -webkit-box-shadow: 0 0.5rem 3rem $dark-tree !important;
+          box-shadow: 0 0.5rem 3rem $dark-tree !important;
 }
 
 .hr-5 {
@@ -41,4 +41,12 @@ body {
 
 .hr-20 {
   height: 20rem;
+}
+
+.hr-30{
+  height: 30rem;
+}
+
+.hr-40{
+  height: 40rem;
 }
