@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap");
 /* SCSS HEX */
+$dark-tree: #2b4141ff;
+$sky: #0eb1d2ff;
+$light-sky: #34e4eaff;
+$strawberry: #f06543ff;
+$orange: #ff8811ff;
+$light-orange: #f09d51ff;
 /* SCSS Gradient */
+$grad-main: linear-gradient(225deg, $dark-tree, $sky, $light-sky, $strawberry, $light-orange, $orange);;
+
 html {
   height: 100%;
   overflow-x: hidden;
@@ -9,7 +17,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: linear-gradient(225deg, #2b4141ff, #0eb1d2ff, #34e4eaff, #f06543ff, #f09d51ff, #ff8811ff);
+  background: $grad-main;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -24,7 +32,7 @@ body {
 
 .shadow-1 {
   -webkit-box-shadow: 0 0.5rem 3rem #2b4141ff !important;
-  box-shadow: 0 0.5rem 3rem #2b4141ff !important;
+          box-shadow: 0 0.5rem 3rem #2b4141ff !important;
 }
 
 .hr-5 {
@@ -34,4 +42,3 @@ body {
 .hr-20 {
   height: 20rem;
 }
-/*# sourceMappingURL=index.css.map */
