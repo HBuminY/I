@@ -9,6 +9,8 @@ $light-orange: #f09d51ff;
 /* SCSS Gradient */
 $grad-main: linear-gradient(225deg, $dark-tree, $sky, $light-sky, $strawberry, $light-orange, $orange);;
 
+*{margin:0;padding:0;}
+
 html {
   height: 100%;
   overflow-x: hidden;
