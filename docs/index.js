@@ -54,12 +54,25 @@ contents = [
     "contact.html"
 ];
 
+contentScripts = [
+    "home.js",
+    "projects.js",
+    "services.js",
+    "blog.js",
+    "contact.js"
+];
+
 function loadPage(href) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", href, false);
     xmlhttp.send();
     return xmlhttp.responseText;
 };
+
+async function loadScript(btn_no){
+    let {script}= await import(`./p/scripts/${contentScripts[btn_no]}`);
+    script();
+}
 
 let activeBtn = document.getElementById("btn-1");
 
@@ -73,6 +86,8 @@ function goto(btn_no){
     activeBtn.setAttribute("class","nav-link");
     btn.setAttribute("aria-current","false");
     activeBtn = btn;
+
+    loadScript(btn_no);
 };
 
 goto(0);
