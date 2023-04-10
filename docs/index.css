@@ -14,22 +14,21 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: linear-gradient(225deg, #2b4141ff, #0eb1d2ff, #34e4eaff, #f06543ff, #f09d51ff, #ff8811ff);
+  background: linear-gradient(225deg, #2b4141, #0eb1d2, #34e4ea, #f06543, #f09d51, #ff8811);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .bg-slategray {
-  background-color: #2b4141ff;
+  background-color: #2b4141;
 }
 
 .cursive {
-  font-family: 'MuseoModerno', cursive;
+  font-family: "MuseoModerno", cursive;
 }
 
 .shadow-1 {
-  -webkit-box-shadow: 0 0.5rem 3rem #2b4141ff !important;
-  box-shadow: 0 0.5rem 3rem #2b4141ff !important;
+  box-shadow: 0 0.5rem 3rem #2b4141 !important;
 }
 
 .hr-5 {
@@ -46,5 +45,4 @@ body {
 
 .hr-40 {
   height: 40rem;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

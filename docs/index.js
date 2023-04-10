@@ -69,16 +69,16 @@ function loadPage(href) {
     return xmlhttp.responseText;
 };
 
+let scrData;
 async function loadScript(btn_no){
-    let {script}= await import(`./p/scripts/${contentScripts[btn_no]}`);
-    script();
+    let {script}=await import(`./p/scripts/${contentScripts[btn_no]}`);
+    scrData = script();
 }
 
 let activeBtn = document.getElementById("btn-1");
 
 function goto(btn_no){
-    let contDiv = document.getElementById('content');
-    contDiv.innerHTML = loadPage("./contents/"+contents[btn_no]);
+    changeContent(contents[btn_no]);
     //
     let btn = document.getElementById(`btn-${btn_no}`);
     btn.setAttribute("class","nav-link active");
@@ -88,6 +88,11 @@ function goto(btn_no){
     activeBtn = btn;
 
     loadScript(btn_no);
+};
+
+function changeContent(content){
+    let contDiv = document.getElementById('content');
+    contDiv.innerHTML = loadPage("./contents/"+content);
 };
 
 goto(0);
